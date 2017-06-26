@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string-array name="genders">
+        <item>male</item>
+        <item>female</item>
+        <item>other</item>
+    </string-array>
+
+    <string name="lable_done">Done</string>
+    <string name="lable_name">Name:</string>
+    <string name="lable_age">Age:</string>
+    <string name="lable_gender">Gender:</string>
+    <string name="lable_add">Address:</string>
+</resources>

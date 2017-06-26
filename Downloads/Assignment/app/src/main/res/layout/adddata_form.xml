@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding">
+
+    <Button
+        android:id="@+id/buttonDone"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/lable_done" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonDone"
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lable_name"
+            android:textSize="@dimen/lable_text_size" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:inputType="text"
+            android:minHeight="@dimen/layout_min_height"
+            android:padding="@dimen/input_box_text_padding"
+            android:textSize="@dimen/lable_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/lable_age"
+            android:textSize="@dimen/lable_text_size" />
+
+        <EditText
+            android:id="@+id/editAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:inputType="number"
+            android:minHeight="@dimen/layout_min_height"
+            android:padding="@dimen/input_box_text_padding"
+            android:textSize="@dimen/lable_text_size" />
+
+        <LinearLayout
+            android:id="@+id/layoutGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lable_gender"
+                android:textSize="@dimen/lable_text_size" />
+
+            <Spinner
+                android:id="@+id/spinGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_shape"
+                android:entries="@array/genders"
+                android:minHeight="@dimen/layout_min_height"></Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/lable_add"
+            android:textSize="@dimen/lable_text_size" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/addressbox_height"
+            android:background="@drawable/edittext_shape"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/input_box_text_padding"
+            android:textSize="@dimen/lable_text_size" />
+    </LinearLayout>
+</RelativeLayout>
