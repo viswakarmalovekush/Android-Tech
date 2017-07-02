@@ -54,7 +54,7 @@ public class AddDataForm extends Fragment implements OnClickListener {
         buttonDone.setOnClickListener(this);
 
         // just change here your input JSON by just changing the file name input_json2 to input_json1
-        JSONArray jssonArr = AppUtils.loadJSONFromAsset(getActivity(), "input_json2");
+        JSONArray jssonArr = AppUtils.loadJSONFromAsset(getActivity(), "input_json1");
 
         validationinfo = AppUtils.getValidationInfo(jssonArr, layoutGender);
         return root;
